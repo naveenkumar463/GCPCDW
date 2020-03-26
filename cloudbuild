@@ -1,0 +1,5 @@
+steps:
+ - name: gcr.io/cloud-builders/git
+   args: ['clone',''--branch dev, 'https://github.com/naveenkumar463/GCPCDW']
+ - name: 'gcr.io/cloud-builders/gsutil'
+   args: ['cp', 'GCPCDW/*.py', 'gs://tf-sjsu-dev/PySparkCourseFiles/Wondertest']
